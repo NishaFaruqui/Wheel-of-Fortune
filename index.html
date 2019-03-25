@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wheel of Fortune</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class= "front">
+<div class= "together">
+<img src="https://wheel.fhtl.byu.edu/images/wheel.png" id="wheel" onclick="play()" />
+<button onclick="play()" id="btnplay"><strong>Click to Play</strong></button>
+</div>
+<img src="http://i65.tinypic.com/2nhgqx5.png" border="0" id="logo" />
+</div>
+
+<div id = "rules">
+<h2>Rules</h2>
+<ul>
+  <li>You will have 6 letter guesses</li>
+  <li>You must use lower case to ensure right answer</li>
+  <li>Each correct guess results in $ prize, but total $ prize will only be offered after
+  guessing all letters correctly</li>
+  <li>Incorrect guesses do not receive any penalty/deductions</li>
+  <li>If you correctly guess any repeating letters in word, there will be increased
+  $ prize opportunities </li>
+</ul>
+<!-- <button onclick="play()" id="btnplay">Click to Play</button> -->
+</div>
+
+<div id="cat">
+<h3>Category: Disney Villain</h3>
+</div>
+<!-- <div id="info"></div> -->
+
+<div id="container">
+<div id= "page">
+<div id= "word">
+<span id="letter_0">_</span>
+<span id="letter_1">_</span>
+<span id="letter_2">_</span>
+<span id="letter_3">_</span>
+<span id="letter_4">_</span>
+<span id="letter_5">_</span>
+</div>
+
+<div id="category"><p>Category: Disney Villain</p></div>
+<p id="hint_1"></p>
+
+<div id= "prizemoney">
+<p>Prize Money: $0</p>
+</div>
+
+<br/><br/>
+<button id="back" onclick="window.location.href=window.location.href"><strong>Go Back</strong></button>
+<button id="hint" onclick="hint()"><strong>Hint</strong></button>
+
+</div>
+</div>
+
+
+<script type="text/javascript" src="word1.js"></script>
+</body>
+</html>
